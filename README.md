@@ -1,4 +1,4 @@
-# DZ_4
+# DZ_6
 
 SQL запрос для создания таблицы Users:
 ```
@@ -10,5 +10,3 @@ CREATE TABLE Users(
     created_at timestamp WITH TIME ZONE NOT NULL
 )
 ```
-
-Kafka отключена, что включить установить в application.properties "kafka.enabled=true"

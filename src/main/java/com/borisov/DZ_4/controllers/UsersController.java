@@ -16,7 +16,6 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -85,12 +84,6 @@ public class UsersController {
         UserResponseDTO user = userService.findById(id);
         return assembler.toModel(user);
     }
-    /*@GetMapping("/{id}")
-    public UserResponseDTO getUser(@PathVariable("id") int id){
-        UserResponseDTO user = userService.findById(id);
-        return user;
-    }*/
-
 
 
     @Operation(summary = "Удалит пользователя по ID")

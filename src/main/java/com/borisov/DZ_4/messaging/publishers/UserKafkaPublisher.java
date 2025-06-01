@@ -1,7 +1,7 @@
 package com.borisov.DZ_4.messaging.publishers;
 
 
-import borisov.core.UserChangedEvent;
+import com.borisov.DZ_4.messaging.publishers.events.UserChangedEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,7 @@ import org.springframework.transaction.event.TransactionalEventListener;
 import java.util.concurrent.CompletableFuture;
 
 @Component
-@ConditionalOnProperty(name = "kafka.enabled", havingValue = "true", matchIfMissing = true)
+@ConditionalOnProperty(name = "spring.kafka.enabled", havingValue = "true", matchIfMissing = true)
 
 public class UserKafkaPublisher {
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass());

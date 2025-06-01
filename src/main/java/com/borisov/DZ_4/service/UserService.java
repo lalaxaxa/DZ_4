@@ -3,7 +3,7 @@ package com.borisov.DZ_4.service;
 import com.borisov.DZ_4.dto.UserCreateDTO;
 import com.borisov.DZ_4.dto.UserResponseDTO;
 import com.borisov.DZ_4.mappers.UserMapper;
-import borisov.core.UserChangedEvent;
+import com.borisov.DZ_4.messaging.publishers.events.UserChangedEvent;
 import com.borisov.DZ_4.models.User;
 import com.borisov.DZ_4.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
